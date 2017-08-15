@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url(DarcingScript-Bold.otf);
+}
+body{
+  background-color: #02010a;
+  font-family: "Dancing Script";
+}
+header{
+animation-duration: 1s;
+animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: 0%;
+    margin-top: 60%;
+    margin-top:100%;
+      }
+
+  to {
+    margin-top:150%;
+    margin-top: 0%;
+    margin-top: -5%;
+  }
+}
+#encabezado{
+  height: 110px;
+  font-family: "Dancing Script";
+  background-color: #5b7989;
+  margin: auto;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+
+}
+h1{
+  font-family: "Dancing Script";
+  padding-top: 20px;
+  color: white;
+  text-align: left;
+  margin: 25px  ;
+  text-shadow: 2px 2px #02010a;
+}
+footer h1{
+  font-family: "Dancing Script";
+    text-shadow: 1px 1px #02010a;
+}
+.nav{
+  text-align: right;
+  word-spacing: 10px;
+}
+
+a[href]{
+  padding-right: 10px;
+  text-shadow: 2px 2px #02010a;
+  color: white;
+  font-family:"Dancing Script";
+  font-size: 1.3em;
+  text-decoration-line: underline;
+}
+a:hover{
+  text-decoration: none;
+}
+a:active{text-decoration: none;}
+
+#contenido{
+  width: 900px;
+  height: auto;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #82c3a6;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contenido_imagenes{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #d5c75f;
+}
+#img1{
+  height: 95%;
+  width: 95%;
+  margin: 30px 20px 30px 30px;
+  box-shadow: 2px 2px #02010a ;
+  order:1;
+  }
+#contenido2{
+    background-color: #d5c75f;
+    height: auto;
+    border: 1px;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+#caja2{
+  text-align: center;
+  text-decoration: underline;
+  height: 100%;
+  flex-grow: 2;
+
+}
+#img2{
+  height: 80%;
+  margin: 30px;
+  transition-duration: 0.5s,1s,2.5s;
+  box-shadow: 2px 2px #02010a;
+  }
+#img2:hover{
+  -webkit-transform: translate(5px, -20px);
+}
+#caja3{
+  text-align: center;
+  text-decoration: underline;
+  height: 100%;
+  flex-grow: 2;
+    }
+  #img3{
+    height: 100%;
+    margin: 30px;
+    transition: 2.5s ease;
+    box-shadow:2px 2px #02010a;
+
+    }
+    #img3:hover{
+      -webkit-transform: rotate(10deg);
+      }
+  .columna1{
+  display: flex;
+  flex-direction: row;
+}
+
+   #imagen1{
+      width:  100%;
+      height: 100%;
+      filter: blur(10px);
+      flex: auto;
+      box-shadow: 2px 2px #02010a;
+      order: 1;
+    }
+    #imagen2{
+      width:  100%;
+      height: 100%;
+      filter: grayscale(100%);
+      flex: auto;
+      box-shadow: 2px 2px #02010a;
+      order: 2;
+    }
+    #imagen3{
+      width:  100%;
+      height: 100%;
+      filter: sepia(90%);
+      flex: auto;
+      box-shadow: 2px 2px #02010a;
+      order: 3;
+    }
+    .columna2{
+      display: flex;
+      flex-direction: row;
+    }
+    #imagen4{
+      width:  100%;
+      height: 100%;
+      filter: grayscale(100%);
+      flex: auto;
+      box-shadow: 2px 2px #02010a;
+      order: 4;
+    }
+    #imagen5{
+      width:  100%;
+      height: 100%;
+      flex: auto;
+      box-shadow: 2px 2px #02010a;
+      order: 5;
+    }
+    #imagen6{
+      width:  100%;
+      height: 100%;
+      filter: grayscale(100%);
+      flex: auto;
+      box-shadow: 2px 2px #02010a;
+      order: 6;
+    }
+footer{
+  background-color: #C6d5c5;
+  font-family: "Dancing Script";
+  font-size: 10pt;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.contenedor{
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenedor h1{
+width: auto;
+color: black;
+text-align: center;
+}
+div [class*="c"]{
+  min-height: 200px;
+  flex-basis: 30%;
+}
+.c1{
+  height: auto;
+  width: auto;
+  text-align: center  ;
+  order: 1;
+  }
+
+.c2{
+  height: auto;
+  width: auto;
+  text-align: left;
+  order: 2;
+  }
+.c3{
+  height: auto;
+  width: auto;
+  text-align: left;
+  order: 3;
+  }
+.c4{
+  height:auto;
+  width: auto;
+  text-align: left;
+  order:4;
+  }
+  @media all and (max-width:900px) and (min-width:500px){
+
+
+    #contenido{
+    width: 100%;
+    }
+    h1{
+      width: 100%;
+      text-align: center;
+    }
+.nav{
+      text-align: center;
+      width: 100%;
+    }
+    #contenido2{
+      display: flex;
+      flex-direction: column;
+    }
+    #caja2{
+      width: 100%;
+      order:1;
+    }
+    #caja3{
+      width: 100%;
+      order:2;
+}
+.contenedor{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+    .c1{
+      width: 100%;
+      text-align: center;
+      order:1;
+    }
+    .c2{
+      width: 100%;
+      text-align: center;
+      order:2;
+    }
+    .c3{
+      width: 100%;
+      text-align: center;
+      order:3;
+    }
+    .c4{
+      width: 100%;
+      text-align: center;
+      order:4;
+    }
+    .columna1{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .columna2{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+}
